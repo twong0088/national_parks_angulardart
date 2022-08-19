@@ -1,0 +1,16 @@
+<div
+    [ngClass]="selectedPark == null ? 'table-container' : 'table-container-w-preview'"
+>
+    <div class="table">
+        <div
+            *ngFor="let park of parks"
+        >
+            <card
+                [park]="park"
+                [selectedPark]="selectedPark"
+                (click)="selectPark(park)"
+            ></card>
+        </div>
+    </div>
+</div>
+

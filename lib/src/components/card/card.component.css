@@ -1,0 +1,36 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.card-container-selected {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #B0E0E6;
+}
+
+
+.card-container:hover {
+    background-color: #D3D3D3;
+}
+
+.preview-img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+.text-container {
+    padding-left: 20px;
+}
+.title {
+    font-size: large;
+    font-weight: bold;
+}

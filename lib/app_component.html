@@ -1,0 +1,14 @@
+<div class="app">
+    <header [state]="state"></header>
+    <div class="app-body">
+        <table
+            [parks]="parks"
+            [selectedPark]="selectedPark"
+            (onSelectPark)="selectPark"
+        ></table>
+        <preview
+            *ngIf="selectedPark!=null"
+            [(selectedPark)]="selectedPark"
+        ></preview>
+    </div>
+</div>

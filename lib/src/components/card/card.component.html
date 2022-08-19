@@ -1,0 +1,15 @@
+<div
+    [ngClass]="selectedPark != null && park.name == selectedPark.name ? 'card-container-selected' : 'card-container'"
+>
+    <div>
+        <img
+            src="{{park.photo_url}}"
+            class="preview-img"
+        > 
+    </div>
+    <div class="text-container">
+        <div class="title">{{park.name}}</div>
+        <div>{{park.photo_caption}}</div>
+        <a href="{{park.url}}" class="button">See more</a>
+    </div>
+</div>

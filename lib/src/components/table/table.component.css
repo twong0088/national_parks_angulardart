@@ -1,0 +1,16 @@
+.table-container {
+    width: 100vw;
+    height: calc(100vh - 95px);
+    overflow-y: hidden;
+}
+
+.table-container-w-preview {
+    width: 60vw;
+    height: calc(100vh - 95px);
+    overflow-y: hidden;
+}
+
+.table {
+    height: 100%;
+    overflow-y: auto;
+}
