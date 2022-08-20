@@ -18,7 +18,7 @@ class Table {
 
   final StreamController _selectParkCtrl = StreamController();
   
-  @Output("onSelectPark")
+  @Output()
   Stream get onSelectPark => _selectParkCtrl.stream;
 
   void selectPark(Park park) {
