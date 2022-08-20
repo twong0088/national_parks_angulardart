@@ -30,14 +30,10 @@ class AppComponent {
 
   void setSearchTerm(String term) {
     String lowercaseSearchTerm = term.toLowerCase();
-    if (term != "") {
-      filteredParks = allParks.where(
-        (f) => f.name.toLowerCase().startsWith(
-          lowercaseSearchTerm
-        )
-      ).toList();
-    } else {
-      filteredParks = allParks;
-    }
+    filteredParks = allParks.where(
+      (f) => f.name.toLowerCase().startsWith(
+        lowercaseSearchTerm
+      )
+    ).toList();
   }
 }
