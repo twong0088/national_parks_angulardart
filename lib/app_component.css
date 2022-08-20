@@ -1,3 +1,7 @@
+.sort-button {
+    margin-bottom: 10px;
+}
+
 .app-body {
     display: flex;
     flex-direction: row;

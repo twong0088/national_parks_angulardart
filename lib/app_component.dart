@@ -36,4 +36,12 @@ class AppComponent {
       )
     ).toList();
   }
+
+  void sortAlphabeticalOrder() {
+    filteredParks.sort((a, b) => a.name.compareTo(b.name));
+  }
+
+  void sortReverseOrder() {
+    filteredParks.sort((a, b) => b.name.compareTo(a.name));
+  }
 }
